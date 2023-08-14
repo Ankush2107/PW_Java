@@ -57,10 +57,22 @@ class Umpire {
             else if(numFromGuesser == numFromPlayer2) {
                 System.out.println("Player 1 and Player 2 won the game");
             }
-            System.out.println("Player1 won the game");
+            else if(numFromGuesser == numFromPlayer3) {
+                System.out.println("Player 2 and Player 3 won the game");
+            }
+            else {
+                System.out.println("Player1 won the game");
+            }
+            
         }
         else if (numFromGuesser == numFromPlayer2) {
-            System.out.println("Player2 won the game");
+            if(numFromGuesser == numFromPlayer3) {
+                System.out.println("Player 2 and Player 3 won the game");
+            } 
+            else {
+                System.out.println("Player2 won the game");
+            }
+            
         }
         else if(numFromGuesser == numFromPlayer3) {
             System.out.println("Player3 won the game");
